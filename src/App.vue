@@ -25,7 +25,28 @@
     </nav>
 
     <div id="main">
-      
+      <div class="container">
+        <!-- Tags Form -->
+        <div class="tags-form">
+          <div class="form">
+            <div class="input-style-1">
+              <img src="@/assets/images/logo-mini.png" alt="Taggz Logo" class="icon">
+              <input type="text" placeholder="Enter your Youtube video title to generate tags">
+              <button>
+                <img src="@/assets/images/magnifier.png" alt="Search Button">
+              </button>
+            </div>
+          </div>
+          <div class="tags-result">
+            <div class="tag-style-1" v-for="i in 50" :key="i">
+              <div class="tag-title">HTML Course</div>
+              <a href="javascript:void(0)" class="times">X</a>
+            </div>
+          </div>
+          <button class="btn-style-1" style="margin:15px 0px;">Copy to Clipboard</button>
+        </div>
+        <!-- End Tags Form -->
+      </div>
     </div>
   </div>
 </template>
